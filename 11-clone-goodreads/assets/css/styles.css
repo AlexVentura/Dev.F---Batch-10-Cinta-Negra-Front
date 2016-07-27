@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.homeheader {
+  display: flex;
+  height: 295px; }
+  .homeheader .homeheader_title {
+    align-content: center;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    width: 70%; }
+  .homeheader .homeheader_form {
+    background-color: orange;
+    width: 30%; }
+
+.signup .signup_title {
+  background-color: red;
+  padding: 20px; }
+.signup .signup_form {
+  background-color: green; }
+  .signup .signup_form .fields input {
+    height: 35px;
+    width: 280px;
+    display: block;
+    position: relative;
+    margin-top: 5px; }
+  .signup .signup_form .form_path {
+    background-color: gray;
+    display: flex; }
+    .signup .signup_form .form_path div input {
+      padding: 8px;
+      border: 0px;
+      border-radius: 4px;
+      font-size: 18px;
+      line-height: 22px;
+      width: 85px; }
+
+/*# sourceMappingURL=styles.css.map */

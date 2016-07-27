@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="practica2">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular - 2nd Challenge</title>
+
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<div class="container">
+		<!-- Page Content goes here -->
+		<h1>Second AngularJS Challenge</h1>
+
+		{{2+3}}
+
+		<div class="row">
+			<div class="col l4">
+				<ese-mero></ese-mero>
+			</div>
+			<div class="col l4">
+				<lmx-card></lmx-card>
+			</div>
+			<div class="col l4">
+				<div class="input-field col l12">
+					<input type="text" placeholder="Enter word" ng-model="searchText">
+					<label for="first_name">First Name</label>
+					{{ searchText }}
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

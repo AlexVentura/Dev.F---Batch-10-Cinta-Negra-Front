@@ -1,0 +1,57 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/google-map/google-map.html">
+<!--
+`src/my-view4`
+A new view component from scratch
+
+@demo demo/index.html
+-->
+
+<dom-module id="my-view4">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      .main-container {
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+      google-map {
+        height: 600px;
+      }
+    </style>
+    <div class="main-container">
+      <paper-card heading="Card Title">
+        <div class="card-content">Some content</div>
+        <div class="card-actions">
+          <paper-button>Some action</paper-button>
+        </div>
+      </paper-card>
+      <google-map latitude="37.77493" longitude="-122.41942" fit-to-markers>
+        <google-map-marker latitude="37.779" longitude="-122.3892"
+        draggable="true" title="Go Giants!"></google-map-marker>
+        <google-map-marker latitude="37.777" longitude="-122.38911"></google-map-marker>
+      </google-map>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'my-view4',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'Alex my-view4',
+        },
+      },
+
+    });
+  </script>
+</dom-module>

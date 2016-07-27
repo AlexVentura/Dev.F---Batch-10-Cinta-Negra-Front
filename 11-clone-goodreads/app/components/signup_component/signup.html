@@ -1,0 +1,25 @@
+<div class="signup">
+	<div class="signup_title">
+		New here? Create a free account!
+	</div>
+	<div class="signup_form">
+		<form ng-submit="$ctrl.signup()">
+			<!-- <div class="signup_form-fields"> -->
+			<div class="fields">
+				<input type="text" ng-model="$ctrl.name" name="nombre" id="nombre" placeholder="Name">
+				<input type="email" ng-model="$ctrl.email" name="email" id="email" placeholder="Email Address">
+				<input type="password" ng-model="$ctrl.password" name="password" id="password" placeholder="Password">
+			</div>
+			<!-- <div class="signup_form-form_path"> -->
+			<div class="form_path">
+				<div>
+					<input type="submit" name="submit" id="submit" value="Sign up">
+				</div>
+				<div>
+					<span>By clicking “Sign up” I agree to the Goodreads Terms of Service and confirm that I am at least 13 years old.</span>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+

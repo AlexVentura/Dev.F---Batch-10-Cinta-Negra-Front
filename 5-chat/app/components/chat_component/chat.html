@@ -1,0 +1,10 @@
+<div class="row">
+	<form ng-submit="$ctrl.addMessage()">
+		<input type="text" ng-model="$ctrl.user" placeholder="nickname">
+		<input type="text" ng-model="$ctrl.message" placeholder="mensaje">
+		<input type="submit" value="Enviar" class="waves-effect waves-light btn">
+	</form>
+	<div ng-repeat="message in $ctrl.messages">
+		<span>{{message.user}}: </span>{{message.message}}
+	</div>
+</div>
